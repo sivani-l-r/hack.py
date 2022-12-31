@@ -28,6 +28,8 @@ class login_interface(Frame):
     
     
     def login(self):
+
+        """
         file=open('passwords.txt','r')
         d={}
         for line in file:
@@ -40,21 +42,14 @@ class login_interface(Frame):
         val=self.userlbl.get()
         print(val in d)
 
-
-
-
-
         """
-        old way of checking credentials 
-
         if ( (self.pwrd.get() == "123456") and (self.userlbl.get()=="sivani") ):
             messagebox.showinfo("Successfull! ", "Login Successful!")
         elif self.pwrd.get() != "123456":
             messagebox.showinfo("ERROR ", "The password entered is incorrect!")
         else :
             messagebox.showinfo("ERROR ", "The username entered is incorrect!")
-        """
-
+        
 
             
 a = Tk()
